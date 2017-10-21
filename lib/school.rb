@@ -24,6 +24,6 @@ class School
   end
 
   def sort
-    @roster.each { |grades, students| students.sort {|a, b| a <=> b} }
+    @roster.sort.to_h
   end
 end
