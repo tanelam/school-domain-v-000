@@ -4,6 +4,7 @@ class School
 
   def initialize(test)
     @roster = {}
+    
   end
 
   def roster
@@ -24,8 +25,8 @@ class School
   end
 
   def sort
-    @roster.each do |grades, students|
-      students.sort {|a, b| a<=> b}
+    self.each do |grades, students|
+      students.sort {|a, b| a <=> b}
     end
     @roster.sort.to_h
     end
